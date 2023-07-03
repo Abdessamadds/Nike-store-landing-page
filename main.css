@@ -108,3 +108,103 @@ nav ul li a i {
     display: block;
   }
 }
+
+.nav-active {
+    transform: translateX(0%);
+    z-index: 99999;
+  }
+  
+  .toggle .line1 {
+    width: 30px;
+    transform: rotate(45deg) translateY(14px);
+  }
+  .toggle .line2 {
+    transform: translateX(100%);
+    background: linear-gradient(108.22deg, #fbff41 -0.67%, #ec00e2 100%);
+    opacity: 0;
+  }
+  .toggle .line3 {
+    width: 30px;
+    transform: rotate(315deg) translateY(-14px);
+  }
+  
+  
+  
+  .home {
+    position: relative;
+  }
+  .home.row {
+    background: rgba(255, 250, 208, 1);
+  }
+  .home .col-lg-4 {
+    overflow: visible;
+    padding-left: 6%;
+  }
+  
+  .home h6 {
+    color: rgba(0, 167, 157, 1);
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+  .home .line {
+    width: 70px;
+    background-color: rgba(0, 167, 157, 1);
+    height: 3px;
+  }
+  
+  .home h1 {
+    color: rgba(31, 23, 10, 1);
+    font-size: 126px;
+    line-height: 125px;
+    z-index: 99;
+  }
+  .home .dss{
+    color: transparent;
+    background: linear-gradient(107.81deg, #0047ff -0.31%,#fbff41 20%, #ec00e2 45%,black 30% );
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+    -webkit-background-size: 500%;
+  }
+  
+  .home .col-lg-8 {
+    background: linear-gradient(108.22deg, #fbff41 -0.67%, #ec00e2 100%);
+    z-index: -99;
+  }
+  .home .imgg {
+    background: url(img/Nike\ shoes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 111;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .anim{
+   animation: anime 2s ease-in-out forwards infinite alternate;
+  
+  }
+  
+  @keyframes anime {
+    from{
+       transform: translateX(3%);
+    }
+    to{
+      transform:translateX(-3%);
+    }
+  }
+  .home p {
+    color: rgba(255, 154, 0, 1);
+    font-size: 35px;
+    line-height: 41px;
+  }
+  .home button {
+    background: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+    padding: 10px 35px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 3px;
+  }
